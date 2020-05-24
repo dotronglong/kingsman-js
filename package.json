@@ -1,0 +1,25 @@
+{
+  "name": "kingsman",
+  "version": "1.0.1",
+  "description": "A simple JS client to call API endpoints",
+  "main": "dist/index.js",
+  "repository": "git@github.com:dotronglong/kingsman-js.git",
+  "author": "Long Do <me@dotronglong.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "rm -rf dist",
+    "pretest": "npm run build",
+    "test": "mocha",
+    "prebuild": "npm run clean",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "events": "^3.1.0"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^7.1.2"
+  }
+}
